@@ -1,9 +1,47 @@
+/* Uses green color scheme */
 * {
    background-color: #effcef;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
 #order {
-   
+   font-size: 2em;
+   color: red;
+}
+
+button:hover{
+   color: 94d3ac;
+}
+
+form :active {
+   color: 94d3ac;
+}
+
+p {
+   text_align: left;
+   text_decoration: underline;
+   color: rgb(101,92,86);
+   display: none;
+   position: static;
+   font-size: 1em;
+}
+
+.greetings {
+   display: inline;
+   position: relative;
+}
+
+.wantBoba {
+   width: 300px;
+   height: 30%;
+   padding: 30px;
+   margin: 20px;
+   font-size: 3em;
 }
 
 .teas {
@@ -11,4 +49,16 @@
   border-width: thin;
   border-color: hsl(24, 8%, 37%);
   border-radius: 15px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.grid-container {
+  display: grid;
+  grid-row-gap: 50px;
+  justify-content: space-evenly;
 }
