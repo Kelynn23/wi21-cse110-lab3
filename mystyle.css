@@ -10,12 +10,12 @@
 }
 
 #order {
-   font-size: 2em;
+   font-size: 50em;
    color: red;
 }
 
 button:hover{
-   color: 94d3ac;
+   color: blue;
 }
 
 form :active {
@@ -28,7 +28,7 @@ p {
    color: rgb(101,92,86);
    display: none;
    position: static;
-   font-size: 1em;
+   font-size: 50em;
 }
 
 .greetings {
@@ -41,7 +41,7 @@ p {
    height: 30%;
    padding: 30px;
    margin: 20px;
-   font-size: 3em;
+   font-size: 100em;
 }
 
 .teas {
@@ -61,4 +61,8 @@ p {
   display: grid;
   grid-row-gap: 50px;
   justify-content: space-evenly;
+}
+
+[class^="tea"] {
+  background: #94d3ac;
 }
