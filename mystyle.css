@@ -1,0 +1,14 @@
+* {
+   background-color: #effcef;
+}
+
+#order {
+   
+}
+
+.teas {
+  border-style: double;
+  border-width: thin;
+  border-color: hsl(24, 8%, 37%);
+  border-radius: 15px;
+}
