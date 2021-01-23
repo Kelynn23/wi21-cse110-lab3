@@ -7,4 +7,3 @@ Where are you blocked?
   - Not at the moment
 Comfort Level — How close are we to hitting our sprint goals?
   - We are almost there!
-  
