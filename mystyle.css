@@ -1,64 +1,99 @@
-/* Uses green color scheme */
+/* Uses green and red color scheme */
 * {
-   background-color: #effcef;
-}
+    background-color: #effcef;
+ }
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
+ /*when screen is smaller, color changes */
+ @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
   }
+
+ h1, div {
+    font-family: 'Tangerine', serif;
+    display: overline;
+}
+ 
+ 
+ [class|="grid-container"] {
+    background: rgba(255, 0, 0, 0.2);
+  }
+ 
+ button:hover{
+    color: #94d3ac;
+    border-width: 2rem;
+ }
+ 
+ button :active {
+    color: red;
+ }
+
+ div p {
+    font-size: 10pt;
+    color: rgb(255, 179, 80);
 }
 
-#order {
-   font-size: 2em;
-   color: red;
+div > p {
+    background-color: yellow;
 }
 
-button:hover{
-   color: 94d3ac;
+div + p {
+    background-color: rgb(86, 92, 175);
 }
 
-form :active {
-   color: 94d3ac;
+div ~ p {
+    background: #db9292;
 }
 
-p {
-   text_align: left;
-   text_decoration: underline;
-   color: rgb(101,92,86);
-   display: none;
-   position: static;
-   font-size: 1em;
+p.greetings {
+    background-color: rgb(152, 201, 129);
 }
+ 
+ p {
+    text-align: left;
+    text-decoration: underline;
+    color: rgb(101,92,86);
+    position: static;
+    font-size: 2em;
+ }
+  
+ 
+ .greetings {
+    display: inline;
+    position: relative;
+ }
 
-.greetings {
-   display: inline;
-   position: relative;
-}
+ 
+ .flex-container {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+ }
+ 
+ .grid-container {
+    display: grid;
+    grid-row-gap: 50px;
+    justify-content: left;
+    background-color: rgba(184, 238, 184, 0.781);
+ }
 
-.wantBoba {
-   width: 300px;
-   height: 30%;
-   padding: 30px;
-   margin: 20px;
-   font-size: 3em;
-}
+ 
+ .teas {
+    border-style: double;
+    border-width: thin;
+    border-color: hsl(24, 8%, 37%);
+    border-radius: 15px;
+  }
 
-.teas {
-  border-style: double;
-  border-width: thin;
-  border-color: hsl(24, 8%, 37%);
-  border-radius: 15px;
-}
+ #wantBoba {
+    width: 10pc;
+    height: 5pc;
+    padding: 30px;
+    margin: 20pt;
+    font-size: 200%;
+ }
 
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.grid-container {
-  display: grid;
-  grid-row-gap: 50px;
-  justify-content: space-evenly;
-}
+ #order {
+    background-color: rgba(160, 120, 252, 0.2);
+ }
